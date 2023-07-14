@@ -8,9 +8,7 @@ session_start();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>About Us | POINTZON</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by code-projects.org" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="code-projects.org" />
+	<meta name="keywords" content="about us, about pointzon, pointzon, html5, css3, mobile first, responsive" />
 	<link rel="icon" type="image/x-icon" href="../images/favicon.jpg">
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
