@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Lato:wght@300&family=Montserrat&display=swap');
+
+*{
+    font-family: "Inter";
+}
+
+.welcome-section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%),url('../images/welcome-bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index: 102;
+    background-position-x: 50%;
+
+}
+.welcome-section .content-wrap {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.welcome-section .content-wrap .fly-in-text {
+    list-style: none;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+.welcome-section .content-wrap .fly-in-text li {
+    display: inline-block;
+    font-size: 4rem;
+    color: #fff;
+    /* font-family: "Josefin Sans"; */
+    opacity: 1;
+    transition: all 1s ease;
+}
+.welcome-section .content-wrap .fly-in-text li:last-child {
+    margin-right: 0;
+}
+.welcome-section .content-wrap .enter-button {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* font-family: "Josefin Sans"; */
+    color: #a200ff;
+    color: #c11dff;
+    opacity: 1;
+    transition: all 1s ease 1s;
+}
+
+.welcome-section.content-hidden .content-wrap .fly-in-text li { opacity: 0; }
+.welcome-section.content-hidden .content-wrap .fly-in-text li:nth-child(1) { transform: translate3d(-100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+
+/* @media (min-width: 800px) {
+    .welcome-section .content-wrap .fly-in-text li { font-size: 3em; }
+    .welcome-section .content-wrap .enter-button { font-size: 1.5em; }
+} */
+
+@media (max-width: 426px){
+    .welcome-section .content-wrap .fly-in-text li{
+        font-size: 2.8rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .welcome-section .content-wrap .enter-button{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 376px){
+    .welcome-section .content-wrap .fly-in-text li{
+        font-size: 2.8em;
+        letter-spacing: 0.2em;
+    }
+
+    .welcome-section .content-wrap .enter-button{
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 360px){
+    .welcome-section .content-wrap .fly-in-text li{
+        font-size: 2.6rem;
+        letter-spacing: 0.2em;
+    }
+
+    .welcome-section .content-wrap .enter-button{
+        font-size: 1.2em;
+    }
+}
+
+
+

@@ -1,0 +1,33 @@
+.features-card {
+    border-radius: 18px;
+    background: #280c50;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.5s ease;
+    color: white;
+    cursor: pointer;
+  }
+  /* .news-card .card-image img {
+    grid-area: image;
+    background: url("img1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  } */
+  
+.features-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+.features-icon i{
+    margin: 0.7em 0;
+}
+
+.features-card-text{
+  padding: 1em;
+}

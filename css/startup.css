@@ -1,0 +1,268 @@
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+
+
+.main-news-container {
+    margin: 7rem 0rem;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input[type = text], input[type=number]{
+    padding: 5px 3px;
+    color: white;
+    background-color: rgba(115, 0, 186, 0.588) !important;
+    background-color: rgb(23, 2, 43)!important;
+    background-color: rgb(34, 0, 65)!important;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 0.7rem 1.5rem;
+    margin-left: 1rem;
+}
+
+.paymentElement {
+    padding: 0.9rem 1.2rem;
+    border: 1px solid rebeccapurple;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 5rem;
+    /* display: inline-block; */
+}
+
+label,#currency{
+    color: white;
+}
+
+
+
+.news-heading {
+margin: 1rem auto;
+text-align: center;
+}
+
+.news-heading h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+#news-info p {
+    text-align: left;
+    margin: 2rem 1rem;
+    color: rgb(239, 239, 239);
+}
+
+.news-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem 0 0rem;
+}
+
+.news-img-wrapper{
+width: 50vw;
+}
+
+.news-image img {
+    /* box-shadow: 0px 0px 5px 3px rgba(117, 117, 117, 0.466); */
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.tagline{
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.news-body {
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.news-body p {
+    font-size: 1.4rem;
+    color: rgb(239, 239, 239);
+}
+
+.news-body p a{
+    font-size: 1rem;
+    padding: 2px 8px;
+    color: rgb(239, 239, 239);
+}
+
+.fullText{
+    color: rgb(239, 239, 239);
+    font-size: 1.4rem;
+    margin: -5rem 1rem 5rem;
+}
+
+
+@media (max-width: 426px){
+.main-news-container{
+    margin: 11rem 1rem 8rem;
+}
+
+.news-heading h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.news-body p a{
+    font-size: 0.8rem;
+}
+
+.news-body p i{
+    font-size: 0.8rem;
+
+}
+
+}
+
+
+/* styling for portfolio charts start */
+    
+    .chartContainer{
+      background-color: transparent;
+      width: 50vw;
+      margin-bottom: 5rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.716);
+      padding: 0rem 1.5rem 0rem 0;
+    }
+    
+    .chartWrapper{
+     display: grid;
+     place-items: center;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+      padding: 1rem 0rem;
+    }
+
+    .textContainer{
+        color: white;
+        font-size: 1rem;
+        padding: 0 0 0 2rem;
+        margin-top: -3rem;
+    }
+    
+    .textContainer li{
+        list-style-type: disc;
+    }
+     .s-active{
+        color: #20e679;
+    }
+    .m-active{
+color: rgb(255, 255, 99);
+    }
+    .l-active{
+        color: rgb(66, 66, 255);
+    }
+
+   /* .textContainer li:nth-child(2){
+color: rgb(201, 231, 6);
+    }
+
+    .textContainer li:nth-child(3){
+color: rgb(62, 58, 255);
+
+    } */
+
+    .chosen{
+        font-size: 1.3rem;
+    }
+
+
+    .textContainer p:nth-child(3){
+        color: rgb(140, 140, 140);
+    }
+
+    
+    @media (max-width: 426px){
+
+        .main-news-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10rem auto 2rem;
+        }
+
+        .main-news-container p, .fullText, .textContainer{
+font-size: 1.2rem;
+        }
+        
+        .news-img-wrapper{
+        width: 90vw;
+        margin-bottom: 1rem;
+        }
+
+        .news-body p {
+            font-size: 1.2rem;
+            color: rgb(239, 239, 239);
+            padding: 0 1.5rem;
+        }
+        .news-body ul p a,.news-body ul p i{
+            font-size: 1rem;
+        }
+
+        .news-body ul{
+            margin-bottom: 5rem;
+        }
+        .chartWrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .news-heading{
+            margin: 1rem auto 2rem;
+        }
+
+        .news-image{
+            margin: 0;
+        }
+
+        .textContainer{
+            padding: 0rem 1.5rem;
+            margin-top: -9rem;
+        }
+
+        #smart-button-container{
+            margin-top: 3rem;
+
+        }
+      .chartContainer{
+        width: 100vw;
+        padding: 0;
+      }
+      .paymentElement {
+        padding: 1rem;
+        border: 1px solid rebeccapurple;
+        margin: 0 auto;
+        border-radius: 5rem;
+        font-size: 13px;
+    }
+      .chartWrapper h2{
+        margin-top: 3rem;
+      }
+    
+    #pwrap1{
+      flex-wrap: wrap-reverse;
+    }
+    
+    #pwrap1 h2{
+    
+      font-size: 30px;
+    }
+    
+    #pwrap2{
+      flex-wrap: wrap;
+    }
+    }
+    /* styling for portfolio charts ends */

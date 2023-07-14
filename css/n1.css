@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Lato:wght@300&family=Montserrat&display=swap');
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    color: white;
+}
+
+
+
+.main-news-container {
+    margin: 11em 3em 8em;
+
+    background-color: transparent;
+}
+
+.news-heading {
+    margin-left: 1em;
+    margin-top: 4em;
+}
+
+.news-heading h2 {
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+#news-info p {
+    text-align: left;
+    margin: 2em 1em;
+    color: rgb(239, 239, 239);
+}
+
+.news-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-image img {
+    margin: 2em;
+    box-shadow: 0px 0px 5px 3px rgba(117, 117, 117, 0.466);
+}
+
+.news-body {
+    margin: 1em;
+    text-align: left;
+}
+
+.news-body p {
+    font-size: 1.4em;
+    color: rgb(239, 239, 239);
+}
+
+@media (max-width: 426px){
+.main-news-container{
+    margin: 11em 1em 8em;
+}
+
+.news-heading h2 {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+}
+

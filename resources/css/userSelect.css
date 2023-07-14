@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+}
+.Main-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.container-login{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 15px 0;
+    background: #9053c7;
+    color: #d9d8d8;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    background-image: radial-gradient(circle, #360274, #2f0564, #280655, #210746, #1b0537);
+
+}
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    max-width: 500px;
+    height: 200px;
+    padding: 35px;
+  
+    /* border: 1px solid rgba(255, 255, 255, .25); */
+    border-radius: 20px;
+    background-color: rgb(29, 1, 52);
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); */
+  
+    backdrop-filter: blur(10px);
+    margin: 3rem 4rem 0;
+  }
+
+  .card p{
+    font-size: 18px;
+  }
+  
+  .card-footer-link {
+    font-size: 1rem;
+    color: rgb(204, 204, 229);
+    text-decoration: none;
+  }
+
+  .card-footer-link:hover {
+    color: rgb(247, 247, 255);
+    text-decoration: underline;
+  }
+
+  @media(max-width:769px){
+    .cardContainer{
+flex-direction: column;
+    }
+    .card{
+        padding: 2rem;
+        width: 80%;
+        height: 250px;
+    }
+    .card p{
+        font-size: 15px;
+        padding: 1rem 0;
+      }
+
+      .container-login{
+        padding: 8rem 0;
+      }
+      h1{
+        margin: 0 1rem;
+      }
+  }
+
+  demo{
+    color: #490c7e3c;
+  }
+
+  

@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lobster&display=swap');
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  --lightGrey: #fcfcfc;
+  --pink: #b52b65;
+  --darkPurple: #4f3961;
+  --darkGrey: #585858;
+  --darkerGrey: #6d6d6d;
+  --yellow: #ffe75e;
+  --white: #fff;
+  --familyRoboto: "Roboto", sans-serif;
+  --familyRobotoSlab: "Roboto Slab", sans-serif;
+  --bold: bold;
+  --void: #0E0816;
+  --fuschia: #A239CA;
+ --jewel: #4717F6;
+ --stark: #E7DFDD;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--void);
+  color: var(--stark);
+  background-color: var(--void);
+  font-family: var(--familyRoboto);
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  outline-color: var(--yellow);
+}
+
+
+/* Intro */
+
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-one {
+  position: absolute;
+  top: 0em;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  /* clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh); */
+  z-index: 0;
+  background-image: url('/images/hero-image.png');
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.heroText{
+  position: absolute;
+  top: 0em;
+  left: 2em;
+}
+
+.quoteCircle{
+  position: relative;
+  top: 11em;
+  left: 1em;  
+  height: 23em;
+  width: 23em;
+  border-radius: 50%;
+  background-color: #ffd2dd6d;
+  z-index: 2;
+  font-family: 'Josefin Sans';
+}
+
+.heroQuote{
+  position: relative;
+  top: -4em;
+  width: 14em;
+  z-index: 2;
+  left: 3em;  
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.heroQuoteSub{
+  position: relative;
+  top: -7em;
+  width: 18em;
+  z-index: 2;
+  left: 6.2em;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#callToAction{
+  position: relative;
+  z-index: 2;
+  top: -8em;
+  left: 10em;
+  font-family: 'Josefin Sans';
+  font-size: 10px;
+  font-weight: lighter;
+  background-color: #5E4DCD;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 2px 0.2px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+/* media queries for devices less than 426px width for hero section starts */
+
+@media (max-width: 426px) {
+  
+  .heroText{
+    position: absolute;
+    top: 13em;
+    left: -0.5em;
+  }
+
+  .quoteCircle{
+    position: relative;
+    top: 11em;
+    left: 1em;  
+    height: 16em;
+    width: 16em;
+    border-radius: 50%;
+    background-color: #ffd2dd6d;
+    z-index: 2;
+    font-family: 'Josefin Sans';
+  }
+  
+  .heroQuote{
+    position: relative;
+    top: -2em;
+    width: 14em;
+    z-index: 2;
+    left: 3em;  
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  
+  .heroQuoteSub{
+    position: relative;
+    top: -2.5em;
+    width: 18em;
+    z-index: 2;
+    left: 5.2em;  
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  
+  #callToAction{
+    position: relative;
+    z-index: 2;
+    top: -2em;
+    left: 8em;  
+    font-family: 'Josefin Sans';
+    font-size: 8px;
+    font-weight: lighter;
+    background-color: #5E4DCD;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 2px 0.2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .heroText{
+    position: absolute;
+    top: 5em;
+    left: -0.5em;
+  }
+
+  .quoteCircle{
+    position: relative;
+    top: 11em;
+    left: 1em;  
+    height: 16em;
+    width: 16em;
+    border-radius: 50%;
+    background-color: #ffd2dd6d;
+    z-index: 2;
+    font-family: 'Josefin Sans';
+  }
+  
+  .heroQuote{
+    position: relative;
+    top: -2em;
+    width: 14em;
+    z-index: 2;
+    left: 3em;  
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  
+  .heroQuoteSub{
+    position: relative;
+    top: -2.5em;
+    width: 18em;
+    z-index: 2;
+    left: 5.2em;  
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  
+  #callToAction{
+    position: relative;
+    z-index: 2;
+    top: -2em;
+    left: 8em;  
+    font-family: 'Josefin Sans';
+    font-size: 8px;
+    font-weight: lighter;
+    background-color: #5E4DCD;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 2px 0.2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 321px) {
+
+  .heroQuote{
+    position: relative;
+    top: -2em;
+    width: 15em;
+    z-index: 2;
+    left: 5em;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .heroQuoteSub {
+    position: relative;
+    top: -1.8em;
+    width: 15em;
+    z-index: 2;
+    left: 6.2em;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  #callToAction {
+    position: relative;
+    z-index: 2;
+    top: 0em;
+    left: 10em;
+    font-family: 'Josefin Sans';
+    font-size: 8px;
+    font-weight: lighter;
+    background-color: #5E4DCD;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 2px 0.2px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    }
+}
+  
+
+
+
+/* media queries for devices less than 426px width for hero section ends */
+
+/* .hero-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  background-color: green;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(https://w0.peakpx.com/wallpaper/267/596/HD-wallpaper-macbook-pro-laptop-purple-light-ultra-computers-hardware-dark-internet-business-laptop-purple-apple-night-open-modern-design-background-digital-technology-computer-macbook-macbookpro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.header-title {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-primary {
+  font-size: 2em;
+  display: block;
+  font-weight: 700;
+}
+
+/* .intro {
+  background-image: url("/hero-image.png");
+  background-size: contain;
+}
+
+.intro__title {
+  margin: 0;
+  font-family: var(--familyRobotoSlab);
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--stark);
+  background-color: var(--void);
+}
+
+.intro__subtitle {
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+  color: var(--darkGrey);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7em 1.2em;
+  font-size: 1rem;
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: #a5285c;
+}
+
+.intro__illustration {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+@media (min-width: 32em) {
+  .intro {
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      ". img"
+      "title img"
+      "subtitle img"
+      "button img"
+      ". img";
+  }
+
+  .intro__title {
+    grid-area: title;
+    margin: 0;
+  }
+
+  .intro__subtitle {
+    grid-area: subtitle;
+    margin: 0;
+  }
+
+  .intro .button {
+    grid-area: button;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .intro__illustration {
+    grid-area: img;
+    align-self: center;
+  }
+} */
+
+/* @media (min-width: 60em) {
+  .intro {
+    width: 80%;
+  }
+
+  .intro__title {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .intro__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+  }
+} */
+
+/* Features */
+.features {
+  padding: 0 1em;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.features__list li {
+  padding: 1rem;
+}
+
+.features p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 32em) {
+  .features__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .features__list li {
+    flex-basis: 350px;
+  }
+}
+
+.features__list svg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 60em) {
+  .features {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features p {
+    font-size: 1.1rem;
+  }
+}
+
+.section__title {
+  color: var(--darkPurple);
+  font-weight: var(--bold);
+  font-size: 1.85rem;
+  line-height: 1.1;
+}
+
+@media (min-width: 60em) {
+  .section__title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Grow */
+.grow {
+  padding: 0 1em;
+  position: relative;
+  margin-top: 6.5rem;
+}
+
+.grow svg {
+  width: 100%;
+}
+
+.grow p {
+  font-size: 0.9rem;
+}
+
+.blob {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media (min-width: 32em) {
+  .grow {
+    margin-top: 35rem;
+    display: grid;
+    grid-template-columns: minmax(200px, 550px) 40%;
+    grid-template-areas:
+      ". img"
+      "title img"
+      "p img"
+      ". img";
+  }
+
+  .grow__title {
+    grid-area: title;
+  }
+
+  .grow p {
+    grid-area: p;
+    margin: 0;
+  }
+
+  .grow > svg:first-of-type {
+    grid-area: img;
+  }
+
+  .blob {
+    top: -50px;
+  }
+}
+
+@media (min-width: 60em) {
+  .grow {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grow p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Feedback */
+.get-feedback {
+  padding: 0 1em;
+}
+.get-feedback p {
+  font-size: 0.9rem;
+}
+
+.get-feedback svg {
+  width: 100%;
+}
+
+@media (min-width: 32em) {
+  .get-feedback {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 50% minmax(200px, 550px);
+    grid-template-areas:
+      "img ."
+      "img title"
+      "img p"
+      "img .";
+  }
+
+  .get-feedback__title {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .get-feedback svg {
+    grid-area: img;
+  }
+
+  .get-feedback p {
+    grid-area: p;
+    margin: 0;
+  }
+}
+
+@media (min-width: 60em) {
+  .get-feedback {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .get-feedback p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Learning */
+.learning {
+  padding: 0 1em;
+}
+
+.learning p {
+  font-size: 0.9rem;
+}
+
+.learning svg {
+  width: 100%;
+}
+
+@media (min-width: 32em) {
+  .learning {
+    display: grid;
+    grid-template-columns: minmax(200px, 450px) 50%;
+    grid-template-areas:
+      ". img"
+      "title img"
+      "p img"
+      ". img";
+  }
+
+  .learning__title {
+    grid-area: title;
+  }
+
+  .learning p {
+    grid-area: p;
+    margin: 0;
+  }
+
+  .learning svg {
+    grid-area: img;
+  }
+}
+
+@media (min-width: 60em) {
+  .learning {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .learning p {
+    font-size: 1.1rem;
+  }
+}
+
+/* get-started */
+.get-started li {
+  width: 250px;
+  height: 250px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/circle-shape_fbgxd9.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.get-started strong {
+  font-size: 2.2rem;
+}
+
+.get-started p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 45em) {
+  .get-started {
+    margin-top: 100px;
+  }
+  .get-started ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .get-started li {
+    width: 320px;
+    height: 320px;
+    background-size: initial;
+  }
+}
+
+@media (min-width: 60em) {
+  .get-started {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .get-started p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Start learning */
+.start-learning {
+
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.start-learning .button {
+  display: none;
+  margin: 2rem 0;
+}
+
+.video-learning {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 0;
+  border-radius: 3px;
+}
+
+.video-learning:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+
+.video-learning:-webkit-full-screen {
+  max-width: none;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.video-button {
+  max-width: 50px;
+  padding: 0.5rem;
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.video-button:hover {
+  background-color: var(--pink);
+}
+
+.video-slider {
+  width: 10px;
+  height: 30px;
+}
+
+.video-controls {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video-learning .progress {
+  height: 10px;
+}
+
+.video-controls > * {
+  flex: 1;
+}
+
+.progress {
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+}
+
+.progress-fill {
+  width: 0%;
+  background-color: var(--pink);
+  flex: 0;
+  flex-basis: 0%;
+}
+
+.blob-learning {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  height: 500px;
+}
+
+@media (min-width: 32em) {
+  .blob-learning {
+    top: -100px;
+    height: 800px;
+  }
+}
+
+/* Footer */
+
+
+.arrow-1,
+.arrow-2 {
+  margin-top: 20px;
+  height: 90px;
+  background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/line-1_dt5tua.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-2 {
+  margin-top: -20px;
+}
+
+@media (min-width: 32em) {
+  .arrow-1,
+  .arrow-2 {
+    height: 184px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .arrow-1 {
+    margin-top: 70px;
+    background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/arrow-1-sm_kkfsxp.svg);
+  }
+
+  .arrow-2 {
+    background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/arrow-2-sm_xtrpm5.svg);
+  }
+}
+
+@media (min-width: 60em) {
+  .arrow-1,
+  .arrow-2 {
+    height: 283px;
+  }
+
+  .arrow-1 {
+    margin-top: 110px;
+    background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/arrow-1-lg_jhrqpv.svg);
+  }
+
+  .arrow-2 {
+    background-image: url(https://res.cloudinary.com/alexandracaulea/image/upload/v1583497341/arrow-2-lg_cjykcq.svg);
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
